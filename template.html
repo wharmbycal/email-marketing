@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="x-apple-disable-message-reformatting">
     <title>Email Template</title>
     <!--[if !mso]><!-->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -12,13 +13,18 @@
         body {
             margin: 0;
             padding: 0;
+            width: 100% !important;
             background-color: #ffffff;
             font-family: 'Inter', Arial, sans-serif;
             -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
         }
 
         table {
             border-spacing: 0;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
         }
 
         td {
@@ -27,6 +33,10 @@
 
         img {
             border: 0;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
         }
 
         .wrapper {
@@ -41,7 +51,6 @@
             margin: 0 auto;
             width: 100%;
             max-width: 600px;
-            border-spacing: 0;
             font-family: 'Inter', Arial, sans-serif;
             color: #000000;
         }
@@ -51,10 +60,32 @@
             text-align: center;
         }
 
+        .logo-container {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0;
+        }
+
         .logo {
             width: 120px;
-            /* Reduced from 200px */
+            max-width: 120px;
             height: auto;
+        }
+
+        .logo-lbo {
+            width: 160px;
+            max-width: 160px;
+            height: auto;
+        }
+
+        .ampersand {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0 10px;
+            font-size: 24px;
+            line-height: 40px;
+            color: #000000;
+            font-family: 'Inter', Arial, sans-serif;
         }
 
         .content {
@@ -71,100 +102,108 @@
             color: #666666;
         }
 
-        h1,
-        h2,
-        h3 {
+        h1 {
             margin: 0 0 20px;
             font-weight: 700;
+            font-size: 28px;
+            line-height: 1.2;
         }
 
         p {
             margin: 0 0 20px;
         }
 
-        .cta-button {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #000000;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: 700;
-            margin-top: 20px;
-        }
-
         @media screen and (max-width: 600px) {
             .main {
                 width: 100% !important;
+            }
+
+            h1 {
+                font-size: 24px !important;
+            }
+
+            .logo {
+                width: 100px !important;
+            }
+
+            .logo-lbo {
+                width: 130px !important;
             }
         }
     </style>
 </head>
 
 <body>
-    <center class="wrapper">
-        <table class="main" width="100%">
-            <!-- Header / Logo -->
+    <div role="article" aria-roledescription="email" lang="en" style="background-color: #ffffff;">
+        <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation">
             <tr>
-                <td class="header">
-                    <div style="font-size: 0; line-height: 0;">
-                        <a href="#" target="_blank" style="text-decoration: none; border: 0;"><img
-                                src="https://raw.githubusercontent.com/wharmbycal/email-marketing/main/c%26lnobg.webp"
-                                alt="C&L Logo" class="logo" border="0"
-                                style="display: inline-block; vertical-align: middle;"></a>
-                        <span
-                            style="display: inline-block; vertical-align: middle; padding: 0 10px; font-size: 24px; line-height: 1; color: #000; font-family: 'Inter', Arial, sans-serif;">&</span>
-                        <a href="#" target="_blank" style="text-decoration: none; border: 0;"><img
-                                src="https://raw.githubusercontent.com/wharmbycal/email-marketing/main/lbo.webp"
-                                alt="LBO Logo" class="logo" border="0"
-                                style="display: inline-block; vertical-align: middle;"></a>
-                    </div>
-                </td>
-            </tr>
+                <td align="center">
+                    <table class="main" width="600" cellpadding="0" cellspacing="0" role="presentation">
+                        <!-- Header / Logo -->
+                        <tr>
+                            <td class="header">
+                                <div class="logo-container">
+                                    <a href="#" target="_blank" style="text-decoration: none;">
+                                        <img src="https://raw.githubusercontent.com/[USERNAME]/[REPO]/main/c_l_nobg.png"
+                                            alt="C&L Logo" width="120" class="logo" border="0"
+                                            style="display: inline-block; vertical-align: middle;">
+                                    </a>
+                                    <span class="ampersand">&</span>
+                                    <a href="#" target="_blank" style="text-decoration: none;">
+                                        <img src="https://raw.githubusercontent.com/[USERNAME]/[REPO]/main/lbo_logo.png"
+                                            alt="LBO Logo" width="160" class="logo-lbo" border="0"
+                                            style="display: inline-block; vertical-align: middle;">
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
 
-            <!-- Content Area -->
-            <tr>
-                <td class="content">
-                    <h1>The C&L Minute: We're in the local paper!</h1>
+                        <!-- Content Area -->
+                        <tr>
+                            <td class="content">
+                                <h1>How AI will affect life and work in Leighton Buzzard</h1>
 
-                    <p>Thanks for all the support! We look forward to sharing our latest news with our
-                        community. We're hoping to help out through small monthly articles about the tech topics that
-                        actually matter to us locals.</p>
+                                <p>Thanks for the support, we look forward to sharing our next article with history in
+                                    Leighton Buzzard town. We're hoping to help the community through small articles
+                                    every month about the topics in tech that matter to us locals.</p>
 
-                    <p>In our latest piece, we explore how AI will probably change small towns like ours in quieter ways
-                        than people expect.</p>
+                                <p>AI will probably change small towns like Leighton Buzzard in quieter ways than people
+                                    expect.</p>
 
-                    <p>For many local businesses, it won’t replace jobs, it will simply save time. Writing replies,
-                        updating websites, handling routine admin. The kind of work that often gets pushed to late
-                        evenings.</p>
+                                <p>For many local businesses, it won’t replace jobs — it will simply save time. Writing
+                                    replies, updating websites, handling routine admin. The kind of work that often gets
+                                    pushed to late evenings.</p>
 
-                    <p>Used well, that could mean quicker responses and smoother service for customers.</p>
+                                <p>Used well, that could mean quicker responses and smoother service for customers.</p>
 
-                    <p>But in a town built on relationships and trust, the human side of business will still matter
-                        most.</p>
+                                <p>But in a town built on relationships and trust, the human side of business will still
+                                    matter most.</p>
 
-                    <p><a href="https://www.leightonbuzzardonline.co.uk/business/opinion-how-ai-could-affect-life-and-work-in-leighton-buzzard-5624584"
-                            style="color: #007bff; text-decoration: underline; font-weight: 700;">Tap here to read the
-                            full article</a></p>
+                                <p><a href="https://www.leightonbuzzardonline.co.uk/business/opinion-how-ai-could-affect-life-and-work-in-leighton-buzzard-5624584"
+                                        style="color: #007bff; text-decoration: underline; font-weight: 700;">Tap here
+                                        to read the full article</a></p>
 
-                    <p>-Calum & Lara</p>
+                                <p>-Calum & Lara</p>
 
-                    <p><strong>PS:</strong> Thanks for supporting us!</p>
-                </td>
-            </tr>
+                                <p><strong>PS:</strong> Thanks for supporting us!</p>
+                            </td>
+                        </tr>
 
-            <!-- Footer -->
-            <tr>
-                <td class="footer">
-                    <p>&copy; 2026 C&L Web Design. All rights reserved.</p>
-                    <p>Leighton Buzzard, Bedfordshire, United Kingdom</p>
-                    <p><a href="https://www.clwebdesign.com/unsubscribe-mailing/"
-                            style="color: #00a4bd; text-decoration: none;">Unsubscribe</a></p>
+                        <!-- Footer -->
+                        <tr>
+                            <td class="footer">
+                                <p>&copy; 2026 C&L Web Design. All rights reserved.</p>
+                                <p>Leighton Buzzard, Bedfordshire, United Kingdom</p>
+                                <p><a href="https://www.clwebdesign.com/unsubscribe-mailing/"
+                                        style="color: #00a4bd; text-decoration: none;">Unsubscribe</a></p>
+                            </td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
         </table>
-    </center>
-    <!-- Tracking Pixel (Google Sheets Tracker) -->
+    </div>
+    <!-- Tracking Pixel -->
     <img src="[TRACKER_URL]?uid=[RECIPIENT_ID]" width="1" height="1"
         style="display:none; opacity:0; visibility:hidden;">
 </body>
