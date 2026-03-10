@@ -5,11 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="x-apple-disable-message-reformatting">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
     <title>Email Template</title>
     <!--[if !mso]><!-->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <!--<![endif]-->
     <style>
+        :root {
+            color-scheme: light dark;
+            supported-color-schemes: light dark;
+        }
+
         body {
             margin: 0;
             padding: 0;
@@ -113,6 +120,38 @@
             margin: 0 0 20px;
         }
 
+        /* Dark Mode Toggles */
+        .dark-img {
+            display: none !important;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .light-img {
+                display: none !important;
+            }
+
+            .dark-img {
+                display: block !important;
+            }
+
+            body,
+            .wrapper,
+            .main {
+                background-color: #1a1a1a !important;
+                color: #ffffff !important;
+            }
+
+            .content,
+            h1,
+            .ampersand {
+                color: #ffffff !important;
+            }
+
+            .footer {
+                color: #999999 !important;
+            }
+        }
+
         @media screen and (max-width: 600px) {
             .main {
                 width: 100% !important;
@@ -143,16 +182,34 @@
                         <tr>
                             <td class="header">
                                 <div class="logo-container">
-                                    <a href="#" target="_blank" style="text-decoration: none;">
-                                        <img src="https://raw.githubusercontent.com/[USERNAME]/[REPO]/main/c_l_nobg.png"
-                                            alt="C&L Logo" width="120" class="logo" border="0"
-                                            style="display: inline-block; vertical-align: middle;">
+                                    <!-- C&L Logo (Dual) -->
+                                    <a href="#" target="_blank" style="text-decoration: none; display: inline-block;">
+                                        <!--[if !mso]><!-->
+                                        <div class="dark-img">
+                                            <img src="https://raw.githubusercontent.com/[USERNAME]/[REPO]/main/c_l_nobg_dark.png"
+                                                alt="C&L Logo" width="120" class="logo" border="0">
+                                        </div>
+                                        <!--<![endif]-->
+                                        <div class="light-img">
+                                            <img src="https://raw.githubusercontent.com/[USERNAME]/[REPO]/main/c_l_nobg.png"
+                                                alt="C&L Logo" width="120" class="logo" border="0">
+                                        </div>
                                     </a>
+
                                     <span class="ampersand">&</span>
-                                    <a href="#" target="_blank" style="text-decoration: none;">
-                                        <img src="https://raw.githubusercontent.com/[USERNAME]/[REPO]/main/lbo_logo.png"
-                                            alt="LBO Logo" width="160" class="logo-lbo" border="0"
-                                            style="display: inline-block; vertical-align: middle;">
+
+                                    <!-- LBO Logo (Dual) -->
+                                    <a href="#" target="_blank" style="text-decoration: none; display: inline-block;">
+                                        <!--[if !mso]><!-->
+                                        <div class="dark-img">
+                                            <img src="https://raw.githubusercontent.com/[USERNAME]/[REPO]/main/lbo_logo_new_dark.png"
+                                                alt="LBO Logo" width="160" class="logo-lbo" border="0">
+                                        </div>
+                                        <!--<![endif]-->
+                                        <div class="light-img">
+                                            <img src="https://raw.githubusercontent.com/[USERNAME]/[REPO]/main/lbo_logo_new.png"
+                                                alt="LBO Logo" width="160" class="logo-lbo" border="0">
+                                        </div>
                                     </a>
                                 </div>
                             </td>
