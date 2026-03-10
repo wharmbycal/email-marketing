@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <!--[if !mso]><!-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!--<![endif]-->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            font-family: 'Inter', Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+        }
+
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #ffffff;
+            padding-bottom: 40px;
+        }
+
+        .main {
+            background-color: #ffffff;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            border-spacing: 0;
+            font-family: 'Inter', Arial, sans-serif;
+            color: #000000;
+        }
+
+        .header {
+            padding: 40px 20px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 120px;
+            /* Reduced from 200px */
+            height: auto;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: left;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #666666;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0 0 20px;
+            font-weight: 700;
+        }
+
+        p {
+            margin: 0 0 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .main {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center class="wrapper">
+        <table class="main" width="100%">
+            <!-- Header / Logo -->
+            <tr>
+                <td class="header">
+                    <div style="font-size: 0; line-height: 0;">
+                        <a href="#" target="_blank" style="text-decoration: none; border: 0;"><img
+                                src="https://raw.githubusercontent.com/wharmbycal/email-marketing/main/c%26lnobg.webp"
+                                alt="C&L Logo" class="logo" border="0"
+                                style="display: inline-block; vertical-align: middle;"></a>
+                        <span
+                            style="display: inline-block; vertical-align: middle; padding: 0 10px; font-size: 24px; line-height: 1; color: #000; font-family: 'Inter', Arial, sans-serif;">&</span>
+                        <a href="#" target="_blank" style="text-decoration: none; border: 0;"><img
+                                src="https://raw.githubusercontent.com/wharmbycal/email-marketing/main/lbo.webp"
+                                alt="LBO Logo" class="logo" border="0"
+                                style="display: inline-block; vertical-align: middle;"></a>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Content Area -->
+            <tr>
+                <td class="content">
+                    <h1>The C&L Minute: We're in the local paper!</h1>
+
+                    <p>Thanks for all the support! We look forward to sharing our latest news with our
+                        community. We're hoping to help out through small monthly articles about the tech topics that
+                        actually matter to us locals.</p>
+
+                    <p>In our latest piece, we explore how AI will probably change small towns like ours in quieter ways
+                        than people expect.</p>
+
+                    <p>For many local businesses, it won’t replace jobs, it will simply save time. Writing replies,
+                        updating websites, handling routine admin. The kind of work that often gets pushed to late
+                        evenings.</p>
+
+                    <p>Used well, that could mean quicker responses and smoother service for customers.</p>
+
+                    <p>But in a town built on relationships and trust, the human side of business will still matter
+                        most.</p>
+
+                    <p><a href="https://www.leightonbuzzardonline.co.uk/business/opinion-how-ai-could-affect-life-and-work-in-leighton-buzzard-5624584"
+                            style="color: #007bff; text-decoration: underline; font-weight: 700;">Tap here to read the
+                            full article</a></p>
+
+                    <p>-Calum & Lara</p>
+
+                    <p><strong>PS:</strong> Thanks for supporting us!</p>
+                </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+                <td class="footer">
+                    <p>&copy; 2026 C&L Web Design. All rights reserved.</p>
+                    <p>Leighton Buzzard, Bedfordshire, United Kingdom</p>
+                    <p><a href="https://www.clwebdesign.com/unsubscribe-mailing/"
+                            style="color: #00a4bd; text-decoration: none;">Unsubscribe</a></p>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <!-- Tracking Pixel (Google Sheets Tracker) -->
+    <img src="[TRACKER_URL]?uid=[RECIPIENT_ID]" width="1" height="1"
+        style="display:none; opacity:0; visibility:hidden;">
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+sent_emails.json
+.env
+# Optional: if you want to keep the script but hide the password
+# send_email.py
+send_email.py
+node_modules/
+sent_emails.json
+.DS_Store
